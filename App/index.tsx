@@ -12,11 +12,11 @@ const App = () => {
         <Navigation
           navigators={[
             {
-              name: 'Home',
+              name: '/',
               component: HomeScreen,
             },
             {
-              name: 'Contact',
+              name: '/contact',
               component: ContactScreen,
             },
           ]}

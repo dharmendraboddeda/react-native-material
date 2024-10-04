@@ -11,7 +11,7 @@ const HomeScreen = () => {
 
       <Button
         title="Go to Contact Screen"
-        onPress={() => navigation.navigate('Contact')}
+        onPress={() => navigation.navigate('/contact')}
       />
     </View>
   );

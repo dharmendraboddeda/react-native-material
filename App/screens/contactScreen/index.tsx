@@ -10,7 +10,7 @@ const ContactScreen = () => {
       <Text>Contact!</Text>
       <Button
         title="Go to Home Screen"
-        onPress={() => navigation.navigate('Home')}
+        onPress={() => navigation.navigate('/')}
       />
     </View>
   );
