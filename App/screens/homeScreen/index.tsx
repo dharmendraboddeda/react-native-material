@@ -1,14 +1,19 @@
-import {Paper, Typography, Grid} from '@mui/material';
 import React from 'react';
-import {SafeAreaView, Text, View} from 'react-native';
+import {Text, View, Button} from 'react-native';
+import {useNavigation} from '@react-navigation/native';
 
 const HomeScreen = () => {
+  const navigation = useNavigation();
+
   return (
-    <SafeAreaView>
-      <View>
-        <Text>Welcome to the React Native!</Text>
-      </View>
-    </SafeAreaView>
+    <View>
+      <Text>Welcome to the React Native!</Text>
+
+      <Button
+        title="Go to Contact Screen"
+        onPress={() => navigation.navigate('Contact')}
+      />
+    </View>
   );
 };
 

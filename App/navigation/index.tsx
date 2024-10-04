@@ -18,13 +18,13 @@ interface NavigationProps extends Omit<NavigationContainerProps, 'children'> {
 export const Navigation = ({navigators, ...props}: NavigationProps) => {
   return (
     <NavigationContainer {...props}>
-      <Stack.Navigator>
+      <Stack.Navigator screenOptions={{headerShown: false}}>
         {navigators.map((navigator, index) => (
           <Stack.Screen
             key={navigator.name}
             name={navigator.name}
             component={navigator.component}
-            options={navigator.options}
+            options={navigator.options || {}}
           />
         ))}
       </Stack.Navigator>
